@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+#container {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(28, 20px);
+    grid-template-rows: repeat(28, 20px);
+    grid-gap: 1px;
+    border: 1px solid black;
+}
+
+.pixel {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.pixel.active {
+    background-color: black;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056B3;
+}
