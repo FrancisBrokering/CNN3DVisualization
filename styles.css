@@ -20,6 +20,7 @@ body {
     grid-template-rows: repeat(28, 20px);
     grid-gap: 1px;
     border: 1px solid black;
+    margin-bottom: 20px;
 }
 
 .pixel {
@@ -33,9 +34,12 @@ body {
     background-color: black;
 }
 
+#buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
 button {
-    display: block;
-    margin: 20px auto;
     padding: 10px 20px;
     background-color: #007BFF;
     color: white;

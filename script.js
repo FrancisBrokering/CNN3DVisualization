@@ -1,5 +1,6 @@
 const grid = document.getElementById("grid");
 const submitButton = document.getElementById("submit");
+const refreshButton = document.getElementById("refresh");
 let isDrawing = false;
 
 function createGrid() {
@@ -35,7 +36,14 @@ function getMatrix() {
 submitButton.addEventListener("click", () => {
     const matrix = getMatrix();
     console.log(matrix);
-    // process the matrix and send it the the CNN
+    // You can process the matrix or send it to a server here
+});
+
+refreshButton.addEventListener("click", () => {
+    const pixels = document.querySelectorAll(".pixel");
+    pixels.forEach(pixel => {
+        pixel.classList.remove("active");
+    });
 });
 
 // Stop drawing when the mouse is released
