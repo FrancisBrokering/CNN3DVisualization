@@ -5,4 +5,4 @@
 
 def runTest(matrix):
     print("Test run")
-    print(matrix[0])
+    print([matrix])

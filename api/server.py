@@ -4,6 +4,7 @@ import json
 import subprocess
 import os
 from cnn.test import runTest
+from cnn.render import rendercnn
 
 def save_matrix(matrix):
     directory = './cnn'
@@ -22,7 +23,8 @@ def receive_matrix():
     print(matrix)
     # save_matrix(matrix)
     # subprocess.run(["python3", "./cnn/test.py"])
-    runTest(matrix)
+    # runTest(matrix)
+    rendercnn(matrix)
     return jsonify({'message': 'Matrix received successfully'}), 200
 
 if __name__ == '__main__':
